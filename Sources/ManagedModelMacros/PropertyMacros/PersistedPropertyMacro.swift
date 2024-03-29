@@ -24,7 +24,7 @@ public struct PersistedPropertyMacro: AccessorMacro {
     }
     
     return property.isTransformable
-    ? [ "set { setTransformableValue(forKey: \(literal: property.name), to: newValue) }",
+    ? [ "set { setTransformableValue(forKey: \(literal: property.name), to: newValue as Any) }",
         "get { getTransformableValue(forKey: \(literal: property.name)) }" ]
     : [ "set { setValue(forKey: \(literal: property.name), to: newValue) }",
         "get { getValue(forKey: \(literal: property.name)) }" ]
