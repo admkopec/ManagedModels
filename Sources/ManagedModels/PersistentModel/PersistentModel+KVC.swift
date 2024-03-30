@@ -269,7 +269,7 @@ public extension PersistentModel {
     guard let value = value as? T else {
       fatalError("Unexpected value for key \(key)? \(value)")
     }
-    assertionFailure("Codable value is directly stored? \(value)")
+//    assertionFailure("Codable value is directly stored? \(value)")
     return value
   }
   
@@ -291,7 +291,7 @@ public extension PersistentModel {
     guard let value = value as? T else {
       fatalError("Unexpected value for key \(key)? \(value)")
     }
-    assertionFailure("Codable value is directly stored? \(value)")
+//    assertionFailure("Codable value is directly stored? \(value)")
     return value
   }
 }
